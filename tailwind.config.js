@@ -8,7 +8,10 @@ export default {
     extend: {
       fontFamily:{
         'poppin':['Poppins', 'sans-serif']
-      }
+      },
+      screens: {
+        'vsm': '470px',
+         }   // => @media (min-width: 640px) { ... }
     },
   },
   plugins: [],
