@@ -4,8 +4,8 @@ import { MdSms } from "react-icons/md";
 const Intro = () => {
   return (
     <>
-      <div className="flex justify-center relative  items-center px-9 bg-[#000000] h-[550px] vsm:h-[700px] border border-red-700">
-        <div className="absolute left-5 top-[220px] vsm:top-[250px]  sm:left-20 right-5 sm:right-20 z-50 flex flex-col font-poppin">
+      <div className="flex justify-center relative  items-center px-9 bg-[#000000] h-[550px] vsm:h-[700px] ">
+        <div className="absolute left-5 vsm:left-11 top-[220px] vsm:top-[250px]  sm:left-12 right-5 sm:right-20 md:left-[100px] z-[1] flex flex-col font-poppin">
           <div className="flex items-center  w-[100%] my-3">
             <span>
               <GoHorizontalRule className="text-3xl text-white" />
@@ -29,7 +29,7 @@ const Intro = () => {
             <h1>Hire me</h1>
           </button>
         </div>
-        <div className="absolute flex top-[90px]   justify-end  right-0 sm:right-10 h-[85%]  w-[650px] ">
+        <div className="absolute flex top-[90px] z-0   justify-end  right-0 sm:right-10 h-[85%]  w-[650px] ">
       
           <img
             className="hidden vsm:block  mt-6 w-[50%] h-[60%] vsm:w-[80%] vsm:h-[96%]    "
@@ -37,7 +37,7 @@ const Intro = () => {
             alt="men image"
           />
           <img
-            className="block vsm:hidden mt-4  w-[39%] h-[95%] " src="/img/men1.png"
+            className="block vsm:hidden mt-4  w-[43%] h-[95%] " src="/img/men1.png"
             alt="men image"
           />
         </div>
