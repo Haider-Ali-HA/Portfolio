@@ -31,22 +31,22 @@ const Navbar = () => {
           <h1>Logo</h1>
         </div>
         <div className="hidden md:block text-[#ff0342]">
-          <Link className="mx-4 hover:text-yellow-400 hover:border-yellow-400 hover:border-b-2 hover:duration-300 hover:transition ">
+          <Link className="mx-4 border-b-2 font-bold border-black hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
             Home
           </Link>
-          <Link className="mx-4 text-white hover:text-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+          <Link className="mx-4 text-white border-b-2 border-black hover:border-[#ff0342] hover:border-b-2 duration-300 transition ">
             About
           </Link>
-          <Link className="mx-4 text-white hover:text-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+          <Link className="mx-4 text-white border-b-2 border-black hover:border-[#ff0342] hover:border-b-2 duration-300 transition ">
             Portfolio
           </Link>
-          <Link className="mx-4 text-white hover:text-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+          <Link className="mx-4 text-white border-b-2 border-black hover:border-[#ff0342] hover:border-b-2 duration-300 transition ">
             Client
           </Link>
         </div>
         <div className="hidden md:block">
-          <button className="flex justify-center items-center text-[13px] p-2 w-[140px] h-[40px] rounded-3xl mr-5 bg-white text-black hover:bg-yellow-400 duration-500 transition-all ">
-            <MdSms className="mx-2" />
+          <button className="flex justify-center items-center text-[13px] p-2 w-[140px] h-[40px] rounded-3xl mr-5 bg-[#ff0342] text-white  hover:bg-white hover:text-black duration-500 transition-all ">
+            <MdSms className="mr-2" />
             <h1>Contact me</h1>
           </button>
         </div>

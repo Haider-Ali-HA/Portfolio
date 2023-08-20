@@ -1,6 +1,6 @@
 import React from "react";
 import { GoHorizontalRule } from "react-icons/go";
-import { MdSms } from "react-icons/md";
+import { RxArrowRight } from "react-icons/Rx";
 const Intro = () => {
   return (
     <>
@@ -24,9 +24,9 @@ const Intro = () => {
               in creating visually appealing and user-friendly websites.
             </h1>
           </div>
-          <button className="flex justify-center items-center text-[13px] p-2 w-[140px] h-[40px] rounded-3xl mr-5 bg-white text-black hover:bg-yellow-400 duration-500 transition-all ">
-            <MdSms className="mx-2" />
+          <button className="flex justify-center items-center text-[13px] p-2 w-[140px] h-[40px] rounded-3xl mr-5 bg-[#ff0342] text-white hover:text-black  hover:bg-[white] duration-500 transition-all ">
             <h1>Hire me</h1>
+            <RxArrowRight className="mx-2" />
           </button>
         </div>
         <div className="absolute flex top-[90px] z-0   justify-end  right-0 sm:right-10 h-[85%]  w-[650px] ">
