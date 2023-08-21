@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { MdSms } from "react-icons/md";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
+  const handleScrollToContact = () => {
+    const contactElement = document.getElementById("Contact");
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
@@ -27,26 +35,57 @@ const Navbar = () => {
             : "fixed left-0 top-0 z-10 w-full bg-transparent h-[90px] flex justify-between items-center font-poppin "
         }
       >
-        <div className="flex justify-center items-center ml-[-11%] vsm:ml-0 h-[90px] w-[200px] text-white ">
-          <h1>Logo</h1>
+        <div className="flex justify-center items-center font-Lobster text-2xl vsm:ml-0 h-[90px] w-[200px] text-white ">
+          <h1>Portfolio</h1>
         </div>
-        <div className="hidden md:block text-[#ff0342]">
-          <Link className="mx-4 border-b-2 font-bold border-black hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+        <div className="hidden md:block text-white">
+          <Link
+            activeClass="active"
+            to="Intro"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition "
+          >
             Home
           </Link>
-          <Link className="mx-4 text-white border-b-2 border-black hover:border-[#ff0342] hover:border-b-2 duration-300 transition ">
+          <Link
+            activeClass="active"
+            to="Skilled"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+          >
             About
           </Link>
-          <Link className="mx-4 text-white border-b-2 border-black hover:border-[#ff0342] hover:border-b-2 duration-300 transition ">
+          <Link
+            activeClass="active"
+            to="Portfolio"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+          >
             Portfolio
           </Link>
-          <Link className="mx-4 text-white border-b-2 border-black hover:border-[#ff0342] hover:border-b-2 duration-300 transition ">
+          <Link
+            activeClass="active"
+            to="Clients"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+          >
             Client
           </Link>
         </div>
         <div className="hidden md:block">
-          <button className="flex justify-center items-center text-[13px] p-2 w-[140px] h-[40px] rounded-3xl mr-5 bg-[#ff0342] text-white  hover:bg-white hover:text-black duration-500 transition-all ">
-            <MdSms className="mr-2" />
+          <button
+            onClick={handleScrollToContact}
+            className="flex justify-center items-center text-[14px] p-2 w-[140px] h-[40px] font-bold rounded-lg mr-5 bg-white text-black border hover:border-[#ff0342] hover:bg-[#ff0342] hover:text-black duration-500 transition-all "
+          >
+            <MdSms size={18} className="mr-2" />
             <h1>Contact me</h1>
           </button>
         </div>
@@ -55,46 +94,87 @@ const Navbar = () => {
           onClick={handleClick}
           className=" block md:hidden text-white  mr-10 hover:cursor-pointer "
         >
-          {!click ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
+          {!click ? (
+            <GiHamburgerMenu size={20} />
+          ) : (
+            <AiOutlineClose size={20} />
+          )}
         </div>
 
         {/* responsive navbar */}
         <div
           className={
             click
-              ? ` block z-30 md:hidden fixed top-[-250px] w-[100%] border-b border-r-white h-[250px] bg-black ${click ?'translate-y-full':'translate-y-0'}  duration-500 transition ease-out `
+              ? ` block z-30 md:hidden fixed top-[-250px] w-[100%] border-b border-r-white h-[270px] bg-black ${
+                  click ? "translate-y-full" : "translate-y-0"
+                }  duration-500 transition ease-out `
               : "fixed left-[-100%]  "
           }
         >
-          <div className={`flex justify-between items-center ml-[%] h-[90px] w-full text-white   `}>
-            <h1 className="ml-9">Logo</h1>
           <div
-          onClick={handleClick}
-          className="block md:hidden text-white  mr-10 hover:cursor-pointer "
-        >
-          {!click ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
-        </div>
+            className={`flex justify-between text-2xl font-Lobster items-center ml-[%] h-[90px] w-full text-white   `}
+          >
+            <h1 className="ml-9">Portfolio</h1>
+            <div
+              onClick={handleClick}
+              className="block md:hidden text-white  mr-10 hover:cursor-pointer "
+            >
+              {!click ? (
+                <GiHamburgerMenu size={20} />
+              ) : (
+                <AiOutlineClose size={20} />
+              )}
+            </div>
           </div>
-          <div className="flex justify-center items-center w-full flex-col text-[#ff0342]">
-            <Link className="mx-4 text-white hover:text-yellow-400 hover:border-yellow-400 hover:border-b-2 hover:duration-300 hover:transition ">
+          <div className="flex justify-center items-center w-full flex-col text-white">
+            <Link
+              activeClass="active"
+              to="Intro"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+            >
               Home
             </Link>
-            <Link className="mx-4 text-white hover:text-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+            <Link
+              activeClass="active"
+              to="Skilled"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+            >
               About
             </Link>
-            <Link className="mx-4 text-white hover:text-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+            <Link
+              activeClass="active"
+              to="Portfolio"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+            >
               Portfolio
             </Link>
-            <Link className="mx-4 text-white hover:text-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition ">
+            <Link
+              activeClass="active"
+              to="Clients"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
+            >
               Client
             </Link>
-              <button className="flex justify-center items-center text-[13px] p-2 w-[140px] h-[40px] rounded-3xl  bg-white text-black hover:bg-yellow-400 duration-500 transition-all ">
-                <MdSms className="mx-2" />
-                <h1>Contact me</h1>
-              </button>
-            
+            <button
+              onClick={handleScrollToContact}
+              className="flex justify-center items-center text-[10px] p-2 my-5 w-[100px] h-[40px] md:w-[140px] md:h-[40px] rounded-lg  bg-white text-black border-t-2 border-b-2 border-white hover:border-b-white hover:border-t-white hover:bg-transparent hover:text-white duration-500 transition-all"
+            >
+              <MdSms className="mr-2" />
+              <h1>Contact me</h1>
+            </button>
           </div>
-          
         </div>
       </div>
     </>

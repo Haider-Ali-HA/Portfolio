@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         poppin: ["Poppins", "sans-serif"],
+        Dancing_Script:['Dancing Script', 'cursive'],
+        Lobster:['Lobster', 'cursive']
       },
       screens: {
         vsm: "470px",
@@ -13,3 +15,5 @@ export default {
   },
   plugins: [],
 };
+
+
