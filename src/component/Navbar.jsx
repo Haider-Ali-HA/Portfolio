@@ -5,12 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  const handleScrollToContact = () => {
-    const contactElement = document.getElementById("Contact");
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+ 
 
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -81,13 +76,18 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden md:block">
-          <button
-            onClick={handleScrollToContact}
+          <Link  
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-50}><button
+            
             className="flex justify-center items-center text-[14px] p-2 w-[140px] h-[40px] font-bold rounded-lg mr-5 bg-white text-black border hover:border-[#ff0342] hover:bg-[#ff0342] hover:text-black duration-500 transition-all "
           >
             <MdSms size={18} className="mr-2" />
             <h1>Contact me</h1>
           </button>
+          </Link>
         </div>
 
         <div
@@ -167,13 +167,20 @@ const Navbar = () => {
             >
               Client
             </Link>
+            <Link
+             
+             to="Contact"
+             spy={true}
+             smooth={true}
+             offset={-20}>
             <button
-              onClick={handleScrollToContact}
+              
               className="flex justify-center items-center text-[10px] p-2 my-5 w-[100px] h-[40px] md:w-[140px] md:h-[40px] rounded-lg  bg-white text-black border-t-2 border-b-2 border-white hover:border-b-white hover:border-t-white hover:bg-transparent hover:text-white duration-500 transition-all"
-            >
+              >
               <MdSms className="mr-2" />
               <h1>Contact me</h1>
             </button>
+              </Link>
           </div>
         </div>
       </div>

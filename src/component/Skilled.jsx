@@ -3,7 +3,10 @@ import React from "react";
 const Skilled = () => {
   return (
     <>
-      <div id="Skilled" className="flex justify-center white items-center flex-col font-poppin bg-black text-white h-[1100px] md:h-[790px] w-full">
+      <div
+        id="Skilled"
+        className="flex justify-center white items-center flex-col font-poppin bg-black text-white h-[1100px] md:h-[790px] w-full"
+      >
         <div className="flex justify-center items-center flex-col ">
           <h1 className=" text-4xl font-extrabold">What I do</h1>
           <div className=" w-[90%] lg:w-[100%] text-[13px] md:text-[15px] text-justify md:text-center mt-9">

@@ -4,7 +4,10 @@ import { RxArrowRight } from "react-icons/Rx";
 const Intro = () => {
   return (
     <>
-      <div id="Intro" className="flex justify-center relative  items-center px-9 bg-[#000000] h-[550px] vsm:h-[700px] ">
+      <div
+        id="Intro"
+        className="flex justify-center relative  items-center px-9 bg-[#000000] h-[550px] vsm:h-[700px] "
+      >
         <div className="absolute left-5 vsm:left-11 top-[220px] vsm:top-[250px]  sm:left-12 right-5 sm:right-20 md:left-[100px] z-[1] flex flex-col font-poppin">
           <div className="flex items-center  w-[100%] my-3">
             <span>
@@ -26,18 +29,18 @@ const Intro = () => {
           </div>
           <button className="flex justify-center items-center text-[13px] md:text-[14px] md:font-bold p-2 w-[100px] h-[40px] md:w-[140px] md:h-[50px] rounded-lg mr-5 bg-[#ff0342] text-white hover:text-black  hover:bg-[white] duration-500 transition-all ">
             <h1>Hire me</h1>
-            <RxArrowRight size={20}className="ml-2 md:mx-2" />
+            <RxArrowRight size={20} className="ml-2 md:mx-2" />
           </button>
         </div>
         <div className="absolute flex top-[90px] z-0   justify-end  right-0 sm:right-10 h-[85%]  w-[650px] ">
-      
           <img
             className="hidden vsm:block  mt-6 w-[50%] h-[60%] vsm:w-[80%] vsm:h-[96%]    "
             src="/img/men2.png"
             alt="men image"
           />
           <img
-            className="block vsm:hidden mt-4  w-[43%] h-[95%] " src="/img/men1.png"
+            className="block vsm:hidden mt-4  w-[43%] h-[95%] "
+            src="/img/men1.png"
             alt="men image"
           />
         </div>

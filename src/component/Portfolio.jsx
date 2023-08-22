@@ -20,32 +20,32 @@ const Portfolio = () => {
         </div>
         <div className="flex justify-center items-center flex-wrap  mt-[40px] w-[90%] md:w-[70%]">
           <img
-            className="w-[150px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
+            className="w-[100px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
             src="/img/portfolio.png"
             alt="men image"
           />
           <img
-            className="w-[150px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
+            className="w-[100px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
             src="/img/portfolio1.png"
             alt="men image"
           />
           <img
-            className="w-[150px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
+            className="w-[100px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
             src="/img/portfolio2.png"
             alt="men image"
           />
           <img
-            className="w-[150px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
+            className="w-[100px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
             src="/img/portfolio3.png"
             alt="men image"
           />
           <img
-            className="w-[150px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
+            className="w-[100px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
             src="/img/portfolio4.png"
             alt="men image"
           />
           <img
-            className="w-[150px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
+            className="w-[100px] sm:w-[200px] md:w-[250px] rounded-xl m-3"
             src="/img/portfolio5.png"
             alt="men image"
           />

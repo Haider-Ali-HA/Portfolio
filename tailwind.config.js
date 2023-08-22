@@ -11,6 +11,9 @@ export default {
       screens: {
         vsm: "470px",
       }, // => @media (min-width: 640px) { ... }
+      behavior :{
+        scroll_behavior: "smooth !important"
+      }
     },
   },
   plugins: [],
