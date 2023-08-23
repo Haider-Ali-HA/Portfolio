@@ -56,13 +56,13 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="active"
-            to="Portfolio"
+            to="Project"
             spy={true}
             smooth={true}
             offset={-100}
             className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
           >
-            Portfolio
+            Project
           </Link>
           <Link
             activeClass="active"
@@ -149,13 +149,13 @@ const Navbar = () => {
             </Link>
             <Link
               activeClass="active"
-              to="Portfolio"
+              to="Project"
               spy={true}
               smooth={true}
               offset={-100}
               className="mx-4 border-[#ff0342] hover:border-[#ff0342] hover:border-b-2 hover:duration-300 hover:transition  "
             >
-              Portfolio
+              Project
             </Link>
             <Link
               activeClass="active"
