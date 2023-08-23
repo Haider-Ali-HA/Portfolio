@@ -40,7 +40,7 @@ const Intro = () => {
           />
           <img
             className="block vsm:hidden mt-4  w-[43%] h-[95%] "
-            src="/img/men1.png"
+            src="/img/men.png"
             alt="men image"
           />
         </div>
